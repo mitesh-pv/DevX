@@ -1,0 +1,4 @@
+server:
+    port: 8091
+
+passon.service.property.name: passon-service.properties
