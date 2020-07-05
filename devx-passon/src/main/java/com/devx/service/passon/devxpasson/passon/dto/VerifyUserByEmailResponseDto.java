@@ -1,16 +1,14 @@
 package com.devx.service.passon.devxpasson.passon.dto;
 
-import com.devx.service.passon.devxpasson.passon.exception.PassOnResponse;
+public class VerifyUserByEmailResponseDto  {
 
-public class VerifyUserByEmailResponseDto extends PassOnResponse {
+    private boolean emailSent = false;
 
-    private String verificationLink;
-
-    public String getVerificationLink() {
-        return verificationLink;
+    public boolean getVerificationLink() {
+        return emailSent;
     }
 
-    public void setVerificationLink(String verificationLink) {
-        this.verificationLink = verificationLink;
+    public void setEmailSent(final boolean emailSent) {
+        this.emailSent = emailSent;
     }
 }

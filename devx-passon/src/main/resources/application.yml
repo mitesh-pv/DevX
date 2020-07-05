@@ -1,4 +1,4 @@
 server:
-    port: 8091
+    port: 8088
 
-passon.service.property.name: passon-service.properties
+passon.service.property.name: devx-service-passon.properties

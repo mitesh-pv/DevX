@@ -20,6 +20,7 @@
 		<java.version>11</java.version>
 		<smtp.sendgrid.version>4.6.0</smtp.sendgrid.version>
 		<apache.commons.version>1.10</apache.commons.version>
+		<lombok.version>1.18.12</lombok.version>
 	</properties>
 
 	<dependencies>
@@ -41,11 +42,20 @@
 			<artifactId>commons-configuration</artifactId>
 			<version>${apache.commons.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<artifactId>jackson-datatype-jsr310</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
